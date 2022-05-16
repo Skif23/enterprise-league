@@ -1,0 +1,73 @@
+.newsroom {
+  background-image: url("https://enterpriseleague.com/public/img/featured/news/background.svg");
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.news-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.news-title span {
+  color: #2189d1;
+}
+
+.light-gray {
+  color: #707070;
+  font-size: 45px;
+  padding-top: 80px;
+  padding-bottom: 124px;
+}
+
+.newsroom-page-tab-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+
+.newsroom-page-tab-buttons .active-tab-link {
+  color: #384f5c;
+}
+
+.newsroom-page-tab-buttons-link {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  letter-spacing: 0.22px;
+  color: #707070;
+  padding-bottom: 8px;
+}
+
+.newsroom-page-tab-buttons .active-tab-link::after {
+  border-bottom-color: #2189d1;
+}
+
+.newsroom-page-tab-buttons-link::after {
+  content: "";
+  margin-top: 5px;
+  border-bottom: 4px solid transparent;
+  border-radius: 3px;
+  width: 100%;
+  display: block;
+}
+
+.h3 {
+  padding-bottom: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@media (min-width: 900px) {
+  .h3 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}

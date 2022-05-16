@@ -1,0 +1,92 @@
+
+  .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 130px;
+    background: #fff;
+  }
+
+  .media .media-banner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3rem;
+  }
+
+  .media .contact-banner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3rem;
+  }
+
+  .media .media-banner-text h3,
+  .media .contact-banner-text h3 {
+    color: #777;
+    font-size: 2rem;
+    font-family: "Roboto";
+    margin-bottom: 2rem;
+  }
+
+  .media .contact-banner-text h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .media .media-banner-text p {
+    width: 60%;
+    color: #777;
+    font-family: "Roboto";
+  }
+
+  .media .contact-banner-text p {
+    color: #777;
+    font-family: "Roboto";
+  }
+
+  .media .media-banner-text a,
+  .media .contact-banner-text a {
+    text-decoration: none;
+    color: #2189d1;
+  }
+
+
+@media (max-width: 768px) {
+   .media {
+     flex-direction: column;
+   }
+
+   .media .media-banner {
+     margin-bottom: 3rem;
+   }
+}
+
+@media (max-width: 600px) {
+  .media {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .media .media-banner {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .media .media-banner-text p {
+    width: 100%;
+  }
+
+  .media .media-banner-image {
+    height: 140px;
+  }
+
+  .media .contact-banner-text p {
+    font-size: 0.9rem;
+  }
+
+  .media .contact-banner-image {
+    height: 130px;
+    align-self: flex-start;
+  }
+}

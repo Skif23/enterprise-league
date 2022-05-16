@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/header/Header";
+import News from "./components/news/News";
+import Press from "./components/press/Press";
+import NewsRoom from "./components/newsroom/NewsRoom";
+import Media from "./components/media/Media";
+import Modal from "./components/modal/Modal";
+import Footer from "./components/footer/Footer";
+import { useState } from "react";
 
 function App() {
+  const [newsOpen, setNewsOpen] = useState(true);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Modal />
+      <Header />
+      <NewsRoom setNewsOpen={setNewsOpen} newsOpen={newsOpen} />
+      {newsOpen ? <News /> : <Press />}
+      <Media />
+      <Footer />
     </div>
   );
 }

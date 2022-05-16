@@ -1,0 +1,134 @@
+.newsroom-page-news {
+  width: 100%;
+  padding: 5rem 8%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 56px;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.newsroom-page-news-item {
+  background: #fff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  flex: 0 0 calc(33% - 40px);
+  height: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.newsroom-page-news-item-title {
+  margin: 0;
+}
+
+.newsroom-page-news-item-image {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsroom-page-news-item-image > img {
+  width: 200px;
+  height: 60px;
+  margin: 0 auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.shadow {
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.h4 {
+  padding-bottom: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.newsroom-page-news-item > h5 {
+  letter-spacing: 0px;
+  color: #384f5c;
+}
+
+.left-align {
+  text-align: left !important;
+}
+
+.newsroom-page-news-item-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  color: #777;
+  margin: 0;
+  padding: 0;
+}
+
+.body2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+@media (max-width: 768px) {
+  main.newsroom {
+    background-image: unset;
+  }
+
+  .news-title {
+    margin: 1rem 2rem;
+  }
+
+  .news-title h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .newsroom-page-news-item {
+    min-width: 90%;
+  }
+  .newsroom-page-news-item h5 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .news-title h1 {
+    text-align: center;
+    font-size: 2rem;
+    min-width: 100%;
+  }
+
+  .media-contact-banner {
+    flex-direction: column;
+  }
+}
