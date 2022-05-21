@@ -11,7 +11,7 @@ export default function Modal() {
       } else {
         setModal(true);
       }
-    }, 1000);
+    }, 10000);
   }, []);
 
   if (modal) {
